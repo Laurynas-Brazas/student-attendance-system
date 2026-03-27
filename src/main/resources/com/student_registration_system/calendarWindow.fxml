@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studed_registration_system.CalendarWindowController">
+   <children>
+      <GridPane fx:id="calendarGrid" gridLinesVisible="true" layoutX="36.0" layoutY="198.0" prefHeight="238.0" prefWidth="509.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label fx:id="monthYearLabel" alignment="CENTER" layoutX="206.0" layoutY="135.0" prefHeight="17.0" prefWidth="169.0" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="previousMonthButton" layoutX="169.0" layoutY="135.0" mnemonicParsing="false" text="&lt;" />
+      <Button fx:id="nextMonthButton" layoutX="387.0" layoutY="135.0" mnemonicParsing="false" text="&gt;" />
+      <Label layoutX="59.0" layoutY="172.0" text="Mo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="172.0" text="Tu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="172.0" text="We">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="172.0" text="Th">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="172.0" text="Fr">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="172.0" text="Sa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="172.0" text="Su">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="26.0" layoutY="27.0" mnemonicParsing="false" onAction="#importData" prefHeight="29.0" prefWidth="95.0" text="Import data" />
+      <Button layoutX="134.0" layoutY="27.0" mnemonicParsing="false" onAction="#exportData" prefHeight="29.0" prefWidth="95.0" text="Export data" />
+      <Button layoutX="477.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToOptions" prefHeight="29.0" prefWidth="95.0" text="Back" />
+      <CheckBox fx:id="filledMonthsCheckBox" layoutX="26.0" layoutY="109.0" mnemonicParsing="false" onAction="#changeViewMode" text="Show only filled out dates" />
+      <Button layoutX="26.0" layoutY="68.0" mnemonicParsing="false" onAction="#showReport" prefHeight="29.0" prefWidth="123.0" text="Attendance report" />
+   </children>
+</Pane>
